@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Dias de desafios com javascript</title>
+</head>
+<body>
+    <script>
+        /*Com numero fixo
+        const numeroAdivinhacao = 5;
+let chute = "";
+let acertou = false;
+
+for(let contador = 0; contador < 3; contador++){    
+    chute = prompt("Tente adivinhar o número de 0 a 10:");
+    if(chute == numeroAdivinhacao){
+        alert(`Parabéns, você acertou! O número era ${numeroAdivinhacao}.`);
+        acertou = true;
+        break;
+    }
+    alert("Errado!");
+}
+if(!acertou){
+    alert(`Infelizmente, você não acertou. O número era ${numeroAdivinhacao}!`);
+}
+
+*/ ///Com numero rondommico
+const numeroAdivinhacao = Math.floor(Math.random() * (10 - 0 + 1) + 0);
+let chute = "";
+let acertou = false;
+
+for(let contador = 0; contador < 3; contador++){    
+    chute = prompt("Tente adivinhar o número de 0 a 10:");
+    if(chute == numeroAdivinhacao){
+        alert(`Parabéns, você acertou! O número era ${numeroAdivinhacao}.`);
+        acertou = true;
+        break;
+    }
+    alert("Errado!");
+}
+if(!acertou){
+    alert(`Infelizmente, você não acertou. O número era ${numeroAdivinhacao}!`);
+}
+        /*/var segredo = parseInt(Math.random() * 11);
+
+        var segredo = 7;
+        alert("Nesse jogo o computador vai gerar um numero oculto tente acertar!")
+
+       for (i = 0; i < 3; i++){
+        var chute = prompt('Digite seu chute');
+        if(segredo == chute){
+            document.write("Acertou!!!  o nnumero pensado foi");
+            break;
+        }else{
+            alert('Errou!!! Continue tentando.');
+        
+        }
+        alert("Você tentou 3 vezes, acabaraam suas tentativas. O numero pensado foi " +segredo)
+        }*/
+    </script>
+</body>
+</html>
